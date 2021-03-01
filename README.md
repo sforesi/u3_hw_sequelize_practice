@@ -1,12 +1,20 @@
 # Sequelize Practice
 
+![](https://www.habilelabs.io/wp-content/uploads/2020/11/Solving-Pagination-and-Filter-Issue-in-Sequelize-Using-QueryGenerator-1.jpg)
+
 ## Deliverables
 
 You'll be creating a database with a theme of your choosing. You must have the following:
 
 - Atleast 3 models
 - Table names must be lowercased and snakecased
-- Crud queries, read, update, create, and delete for each model, You can hard code in information for the create, update and delete. You can either create 3 seperate files or one file for all of these queries.
+- CRUD queries for each model
+  - read
+  - update
+  - create,
+  - delete
+
+You can hard code in information for the create, update and delete. You can either create 3 seperate files or one file for all of these queries.
 
 ## Getting Started
 
@@ -21,7 +29,7 @@ npm install sequelize pg
 ```
 
 ```sh
-npx sequelize-cli init
+sequelize init
 ```
 
 Modify your `config.json` so that you're creating a database with your chosen name and modify the dialect to `postgres`.
@@ -29,7 +37,7 @@ Modify your `config.json` so that you're creating a database with your chosen na
 Create your database:
 
 ```sh
-npx sequelize-cli db:create
+sequelize db:create
 ```
 
 ---
@@ -39,7 +47,7 @@ npx sequelize-cli db:create
 To create a new model run:
 
 ```sh
-npx sequelize-cli model:generate --name <Your Model Name Goes Here> --attributes <someattribute>:<somedatatype>,<other stuff...>
+sequelize model:generate --name <Your Model Name Goes Here> --attributes <someattribute>:<somedatatype>,<other stuff...>
 ```
 
 Remember, there can be no spaces in between each attribute.
@@ -49,7 +57,27 @@ Once your model is created don't forget to add the `tableName` field in the mode
 After each model creation, run:
 
 ```sh
-npx sequelize-cli db:migrate
+sequelize db:migrate
+```
+
+## Generating Seeds
+
+You can generate a seed file using:
+
+```sh
+sequelize seed:generate --name <Seed Name>
+```
+
+Run your seed using:
+
+```sh
+sequelize db:seed:all
+```
+
+Hint: You can also use faker:
+
+```sh
+npm install --save-dev faker
 ```
 
 ## Requiring Models
@@ -65,25 +93,11 @@ const {} = require('./models')
 You can always revert a migration using:
 
 ```sh
-npx sequelize-cli db:migrate:undo
+sequelize db:migrate:undo
 ```
 
-## Generating Seeds
+## Submission
 
-You can generate a seed file using:
+Submit your pull request utilizing the **[Pr Guidelines](https://github.com/SEI-R-1-25/template_pull_request)**.
 
-```sh
-npx sequelize-cli seed:generate --name <Seed Name>
-```
-
-Run your seed using:
-
-```sh
-npx sequelize-cli db:seed:all
-```
-
-Hint: You can also use faker:
-
-```sh 
-npm install --save-dev faker
-```
+Pull requests are due by next day at `10:00 am EST`.
