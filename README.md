@@ -11,7 +11,7 @@ You'll be creating a database with a theme of your choosing. You must have the f
 - CRUD queries for each model
   - read
   - update
-  - create,
+  - create
   - delete
 
 You can hard code in information for the create, update and delete. You can either create 3 seperate files or one file for all of these queries.
