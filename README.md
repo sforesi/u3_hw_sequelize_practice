@@ -2,6 +2,7 @@
 
 ![](https://www.habilelabs.io/wp-content/uploads/2020/11/Solving-Pagination-and-Filter-Issue-in-Sequelize-Using-QueryGenerator-1.jpg)
 
+
 ## Deliverables
 
 You'll be creating a database with a theme of your choosing. You must have the following:
