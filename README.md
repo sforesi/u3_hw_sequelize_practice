@@ -1,5 +1,7 @@
 # Sequelize Practice
 
+![](https://khalilstemmler.com/static/sequelize-banner-aa084fb79fadfa1c0fc483b5092f44f5.png)
+
 ## Deliverables
 
 You'll be creating a database with a theme of your choosing. You must have the following:
