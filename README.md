@@ -7,19 +7,19 @@
 
 You'll be creating a database with a theme of your choosing. You must have the following:
 
-- Atleast 3 models
-- Table names must be lowercased and snakecased
+- At least 3 models
+- Table names must be lowercased and snake_cased
 - CRUD queries for each model
-  - read
-  - update
-  - create
-  - delete
+  - **C** reate
+  - **R** ead
+  - **U** pdate
+  - **D** elete
 
-You can hard code in information for the create, update and delete. You can either create 3 seperate files or one file for all of these queries.
+You can hard code in information for the create, update, and delete. You can either create 3 separate files or one file for all of these queries.
 
 ## Getting Started
 
-These commands should be done in order.
+These commands should be done in order. Remember, if you are a Windows user, these commands will be different obviously.
 
 ```sh
 npm init
@@ -45,7 +45,7 @@ sequelize db:create
 
 ## Creating Models
 
-To create a new model run:
+To create a new model, run:
 
 ```sh
 sequelize model:generate --name <Your Model Name Goes Here> --attributes <someattribute>:<somedatatype>,<other stuff...>
@@ -53,7 +53,7 @@ sequelize model:generate --name <Your Model Name Goes Here> --attributes <someat
 
 Remember, there can be no spaces in between each attribute.
 
-Once your model is created don't forget to add the `tableName` field in the model and adjust the migration generated accordingly.
+Once your model is created, don't forget to add the `tableName` field in the model and adjust the migration generated accordingly.
 
 After each model creation, run:
 
@@ -75,7 +75,7 @@ Run your seed using:
 sequelize db:seed:all
 ```
 
-Hint: You can also use faker:
+Hint: You can also use _faker_:
 
 ```sh
 npm install --save-dev faker
@@ -83,7 +83,7 @@ npm install --save-dev faker
 
 ## Requiring Models
 
-In the file you're using for your queries, don't forget to require your models:
+Don't forget to require your models in the file you're using for your queries:
 
 ```js
 const {} = require('./models')
