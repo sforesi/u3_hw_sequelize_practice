@@ -100,5 +100,3 @@ sequelize db:migrate:undo
 ## Submission
 
 Submit your pull request utilizing the **[PR Guidelines](https://github.com/SEI-R-2-22/template_pull_request)**.
-
-Pull requests are due by next day at `9:00 am EST`.
