@@ -22,7 +22,7 @@ You can hard code in information for the create, update, and delete. You can eit
 These commands should be done in order. Remember, if you are a Windows user, these commands will be different obviously.
 
 ```sh
-npm init
+npm init -y
 ```
 
 ```sh
