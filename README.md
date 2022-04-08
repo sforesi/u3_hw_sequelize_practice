@@ -75,10 +75,10 @@ Run your seed using:
 sequelize db:seed:all
 ```
 
-Hint: You can also use _faker_:
+Hint: You can also use _falso_:
 
 ```sh
-npm install --save-dev faker
+npm i @ngneat/falso
 ```
 
 ## Requiring Models
